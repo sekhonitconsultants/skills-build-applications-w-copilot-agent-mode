@@ -2,7 +2,14 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
+## Environment variables
+
+`VITE_CODESPACE_NAME` must be defined (for example in `.env.local`, see `.env.example`) so the app can
+build the Codespaces-forwarded API URL (`https://$VITE_CODESPACE_NAME-8000.app.github.dev`). When unset,
+the app falls back to `http://localhost:8000`.
+
 Currently, two official plugins are available:
+
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
